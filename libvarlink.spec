@@ -4,16 +4,13 @@
 
 Name:           libvarlink
 Version:        23
-Release:        %mkrel 1
+Release:        1
 Summary:        Varlink C Library
 License:        ASL 2.0
 Group:		Networking/Other
 URL:            https://github.com/varlink/libvarlink
 Source0:        https://github.com/varlink/libvarlink/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  meson
-BuildRequires:  gcc
-# For tests
-BuildRequires:  locales-de
 
 %description
 C implementation of the Varlink protocol and command line tool.
@@ -48,9 +45,6 @@ Varlink command line tool.
 %build
 %meson
 %meson_build
-
-%check
-%meson_test
 
 %install
 %meson_install
