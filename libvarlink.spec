@@ -3,7 +3,7 @@
 %define develname       %mklibname varlink -d
 
 Name:           libvarlink
-Version:        23
+Version:        24
 Release:        1
 Summary:        Varlink C Library
 License:        ASL 2.0
