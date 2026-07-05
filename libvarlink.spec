@@ -1,3 +1,4 @@
+%global optflags %{optflags} -Wno-error -Wno-incompatible-pointer-types-discards-qualifiers
 %define major           0
 %define libname         %mklibname varlink %{major}
 %define develname       %mklibname varlink -d
